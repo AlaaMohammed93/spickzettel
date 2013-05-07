@@ -1,0 +1,7 @@
+@mixin inset-box-shadow($x, $y, $transition, $color) {
+    -webkit-box-shadow: $x $y $transition $color;
+    -moz-box-shadow: $x $y $transition $color;
+    -ms-box-shadow: $x $y $transition $color;
+    -o-box-shadow: $x $y $transition $color;
+    box-shadow: $x $y $transition $color;
+}

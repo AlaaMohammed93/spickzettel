@@ -1,0 +1,20 @@
+body {
+  background: url(img/textured_paper_light.png);
+  width: 100%; }
+
+.hero-unit {
+  background: rgba(0, 0, 0, 0.05) url(img/logo.png);
+  background-position: -500px;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin-top: 20px;
+  overflow: hidden; }
+  .hero-unit div {
+    float: left;
+    width: 80%;
+    margin: 20px 10% 20px 120px; }
+    .hero-unit div h1, .hero-unit div p, .hero-unit div a {
+      margin-left: 100px; }
+  .hero-unit img {
+    float: left;
+    margin: 20px 10px 20px 0; }

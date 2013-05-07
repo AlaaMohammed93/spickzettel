@@ -1,0 +1,127 @@
+<!doctype html>
+
+<title>Spickzettel - Die freie Schülerzeitung</title>
+<meta charset="utf-8">
+<style>
+body {
+  background: #FFF;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.shelf {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background: #555;
+  width: 45px;
+  min-height: 100%;
+  -webkit-box-shadow: inset -12px 0px 20px #1C1C1C;
+  -moz-box-shadow: inset -12px 0px 20px #1C1C1C; 
+  box-shadow: inset -12px 0px 20px #1C1C1C;
+}
+
+.shelf.expand {
+  overflow-y: scroll;
+  width:  100%;
+  height: 100%;
+}
+
+.shelf:hover p {
+  opacity: 1;
+  width: auto;
+}
+
+.shelf p {
+  color: #FFF;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  font-family: Arial;
+  font-size: 1.2em;
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -ms-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.shelf div {
+  display: none;
+  width: 70%;
+  margin: 0 15%;
+}
+
+.shelf div img {
+  margin: 20px 5%;
+  width: 20%;
+  -webkit-box-shadow: 0 12px 12px -10px black;
+  -moz-box-shadow: 0 12px 12px -10px black;
+  box-shadow: 0 12px 12px -10px black;
+}
+
+.close  {
+  display: none;
+  float: right;
+  margin: 30px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+</style>
+
+<div class="shelf">
+  <img class="close" src="../img/close.png">
+  <p>Letzte&nbsp;Ausgaben</p>
+  <div>
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+    <image src="../img/kitten.jpeg">
+  </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+
+// toggle the bookshelf when someone click on it
+$( ".shelf" ).click( function () {
+  if ( !$(this).hasClass( "expand" ) ) {    
+    $(this).animate( { width: "100%" }, 500 , function () {
+      $( ".shelf div").fadeIn(300);
+      $(".close").fadeIn(300);
+    });
+    $(this).addClass( "expand" );
+  }
+  else {
+    $( ".shelf div" ).fadeOut(300)
+    $(".close").fadeOut(300);
+    $(this).delay(300).animate( {width: "45px"}, 500 ); 
+    $(this).removeClass( "expand" );
+  }
+})
+
+$(".shelf").mouseenter( function () {
+  if ( !$(".shelf").hasClass( "expand" ) ) {
+    $(this).delay(30).animate( {width: "50px"}, 100 );
+    $(this).animate( {width: "45px"}, 100 );
+    $(this).animate( {width: "50px"}, 100 );
+    $(this).animate( {width: "45px"}, 100 );
+    $(this).animate( {width: "50px"}, 100 );
+    $(this).animate( {width: "45px"}, 100 );
+  }
+})
+</script>

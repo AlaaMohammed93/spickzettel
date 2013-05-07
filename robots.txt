@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://spickzettel.github.io/spickzettel/sitemap.xml 
