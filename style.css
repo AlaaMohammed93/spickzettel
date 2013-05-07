@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'centabel_bookcentabel_book';
+  font-family: 'centabel';
   src: url("fonts/centabel-webfont.eot");
   src: url("fonts/centabel-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/centabel-webfont.woff") format("woff"), url("fonts/centabel-webfont.ttf") format("truetype"), url("fonts/centabel-webfont.svg#centabel_bookcentabel_book") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'karabine.regular';
+  font-family: 'karabine';
   src: url("fonts/karabine-webfont.eot");
   src: url("fonts/karabine-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/karabine-webfont.woff") format("woff"), url("fonts/karabine-webfont.ttf") format("truetype"), url("fonts/karabine-webfont.svg#karabine.regular") format("svg");
   font-weight: normal;
@@ -14,7 +14,8 @@
 
 body {
   background: url(img/textured_paper_light.png);
-  width: 100%; }
+  width: 100%;
+  font-family: centabel; }
 
 .hero-unit {
   background: rgba(0, 0, 0, 0.05) url(img/logo.png);
@@ -29,6 +30,8 @@ body {
     margin: 20px 10% 20px 120px; }
     .hero-unit div h1, .hero-unit div p, .hero-unit div a {
       margin-left: 100px; }
+    .hero-unit div h1 span {
+      font-family: karabine; }
   .hero-unit img {
     float: left;
     margin: 20px 10px 20px 0; }

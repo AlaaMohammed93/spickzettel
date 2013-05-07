@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'centabel_bookcentabel_book';
+    font-family: 'centabel';
     src: url('fonts/centabel-webfont.eot');
     src: url('fonts/centabel-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/centabel-webfont.woff') format('woff'),
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'karabine.regular';
+    font-family: 'karabine';
     src: url('fonts/karabine-webfont.eot');
     src: url('fonts/karabine-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/karabine-webfont.woff') format('woff'),
@@ -25,6 +25,7 @@
 body {
   background: url(img/textured_paper_light.png);
   width: 100%;
+  font-family: centabel;
 }
 
 .hero-unit {
@@ -38,12 +39,19 @@ body {
         float: left;
         width: 80%;
         margin: 20px 10% 20px 120px;
+        
         h1, p, a {
             margin-left: 100px;
         }
+
+        h1 span {
+            font-family: karabine;
+        }
     }
+    
     img {
         float: left;
         margin: 20px 10px 20px 0;
     }
+
 }
