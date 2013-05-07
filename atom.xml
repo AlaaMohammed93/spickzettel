@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://spickzettel.github.io/spickzettel/atom.xml" rel="self"/>
+  <link href="http://spickzettel.github.io/spickzettel/"/>
+  <updated>2013-05-07T17:00:36+02:00</updated>
+  <id>http://spickzettel.github.io/spickzettel/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://spickzettel.github.io/spickzettel/blog/2013/05/07/test/"/>
+    <updated>2013-05-07T15:20:00+02:00</updated>
+    <id>http://spickzettel.github.io/spickzettel/blog/2013/05/07/test</id>
+    <content type="html"><![CDATA[<h1>Hello World</h1>
+]]></content>
+  </entry>
+  
+</feed>
